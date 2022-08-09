@@ -60,7 +60,11 @@
             gap: 2rem;
 
         body {
-            background: var(--neutral-vdb) url(/src/images/bg-desktop.png) no-repeat bottom;
+            background-color: var(--neutral-vdb);
+            background-image: url(/src/images/bg-desktop.png);
+            background-position: center bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
             
 
