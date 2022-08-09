@@ -144,9 +144,8 @@ p {
   .grid body {
     background-color: var(--neutral-vdb);
     background-image: url("bg-desktop.de2c256c.png");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 0 38rem;
+    background-size: contain;
   }
 
   .grid__cardone {
@@ -205,4 +204,4 @@ p {
   }
 }
 
-/*# sourceMappingURL=index.195a7868.css.map */
+/*# sourceMappingURL=index.529b9951.css.map */
