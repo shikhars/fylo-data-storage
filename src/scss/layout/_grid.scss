@@ -1,0 +1,126 @@
+@use '../util/' as u;
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    gap: 1rem;
+    margin-inline: auto;
+
+    &__cardone {
+        background-color: var(--neutral-db);
+        padding: 2rem;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 5rem;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        width: 100%;
+
+        &--wrapper {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+    }
+
+    &__cardtwo {
+        background-color: var(--neutral-db);
+        color: var(--neutral-pb);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        border-radius: 0.5rem;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        width: 100%;
+    }
+
+    &__cardthree {
+        background-color: hsl(0, 0%, 100%);
+        padding: 1rem 0.5rem;
+        border-radius: 0.5rem;
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+        place-self: center;
+        width: 70%;
+
+        &--wrapper {
+            text-align: center;
+            align-items: baseline;
+            gap: 0.5rem;
+        }
+    }
+
+    @include u.breakpoint(medium) {
+
+            display: grid;
+            grid-template-columns: 1.8fr 1.5fr 1.5fr;
+            grid-template-rows: 1fr 0.1fr 0.3fr 1fr;
+            gap: 2rem;
+
+        body {
+            background: var(--neutral-vdb) url(/src/images/bg-desktop.png) no-repeat bottom;
+        }
+            
+
+            &__cardone {
+                width: 100%;
+                padding: 2.5rem;
+                grid-column: 1 / 2;
+                grid-row: 2 / 4;
+
+                &--wrapper {
+                    margin-top: 3rem;
+                }
+            }
+
+            &__cardtwo {
+                width: 100%;
+                grid-column: 2 / 4;
+                grid-row: 3 / 4;
+                padding: 2rem 1rem;
+                display: grid;
+            }
+
+            &__cardthree {
+                width: 80%;
+                grid-column: 3/ 4;
+                grid-row: 2 / 4;
+                place-self: center;
+                padding: 0.6rem 0.3rem;
+                position: relative;
+                bottom: 60px;
+            }
+
+            .gb-wrapper {
+                gap: 19.7rem;
+                margin-top: 1.5rem;
+            }
+
+            .progress-bar {
+                margin-top: 1.5rem;
+            }
+
+            .circle {
+                transform: translate(u.rem(249), u.rem(2));
+            }
+
+            h1 {
+                position: relative;
+            }
+
+            h1::after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: -30px;
+                right: -5px;
+                width: 0;
+                height: 0;
+                border-left: 30px solid transparent;
+                border-top: 35px solid hsl(0, 0%, 100%);
+
+            }
+    }
+}

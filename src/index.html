@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/favicon-32x32.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./scss/style.scss">
     <title>Fylo Data Storage component</title>
 </head>
+
 <body>
-    
+    <main class="grid">
+        <div class="grid__cardone">
+            <img src="./images/logo.svg" alt="logo">
+            <div class="grid__cardone--wrapper">
+                <div class="bg-clr">
+                    <img src="./images/icon-document.svg" alt="document">
+                </div>
+                <div class="bg-clr">
+                    <img src="./images/icon-folder.svg" alt="folder">
+                </div>
+                <div class="bg-clr">
+                    <img src="./images/icon-upload.svg" alt="upload">
+                </div>
+            </div>
+        </div>
+        <div class="grid__cardtwo">
+            <p>You've used <span class="uppercase bg-white">815 gb</span> of your storage</p>
+            <div class="grid__cardtwo--wrapper">
+                <div class="progress-bar">
+                    <div class="gradient-clr">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="gb-wrapper">
+                    <p class="uppercase bg-white">0 gb</p>
+                    <p class="uppercase bg-white">1000 gb</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid__cardthree">
+            <div class="grid__cardthree--wrapper">
+                <h1>185 <span class="uppercase inline">gb left</span></h1>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
