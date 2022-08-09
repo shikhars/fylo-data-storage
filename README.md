@@ -11,7 +11,7 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 
 ### Screenshot
 
-![](https://github.com/shikhars/testimonial-grid/blob/nondefault/src/images/Screenshot.png)
+![](https://github.com/shikhars/fylo-data-storage/blob/nondefault/src/images/Screenshot.png)
 
 
 ### Links
