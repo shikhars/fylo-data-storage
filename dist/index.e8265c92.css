@@ -134,6 +134,14 @@ p {
 }
 
 @media (min-width: 50em) {
+  body {
+    background-color: var(--neutral-vdb);
+    background-image: url("bg-desktop.008060c2.png");
+    background-position: -2rem 20rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
   .grid {
     grid-template-rows: 1fr .1fr .3fr 1fr;
     grid-template-columns: 1.8fr 1.5fr 1.5fr;
@@ -141,17 +149,10 @@ p {
     display: grid;
   }
 
-  .grid body {
-    background-color: var(--neutral-vdb);
-    background-image: url("bg-desktop.008060c2.png");
-    background-position: 0 38rem;
-    background-size: contain;
-  }
-
   .grid__cardone {
     width: 100%;
     grid-area: 2 / 1 / 4 / 2;
-    padding: 2.5rem;
+    padding: 2rem 4rem 2rem 1.5rem;
   }
 
   .grid__cardone--wrapper {
