@@ -24,7 +24,7 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 - I wrote the html first to structure the webpage.
 - I created Sass partials and folders to organise the Sass workflow.
 - I used the mobile-first approach to create the layout for smaller devices.
-- I used CSS Grid, @mixins, and @media queries to create breakpoints for Tablet and Desktop layouts.
+- I used CSS Grid, @mixins, and @media queries to create breakpoints for Mobile and Desktop layouts.
 
 ### Built with
 
